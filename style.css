@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  grid-template-areas: 
+    "sidebar main-content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #374050;
+  height: 150vh;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 5% 15% 80%;
+  grid-area: main-content;
+  background-color: white;
+  height: 150vh;
+}
+
+.nav {
+  border: 1px solid gray;
+}
+
+.header {
+}
+
+.main-inside {
+  background-color: #EEF2F6;
+  display: grid;
+  grid-template-rows: 30% 1px 70%;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px;
+  grid-gap: 30px;
+}
+
+.job-posting {
+  background-color: white;
+}
+
+.social-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
