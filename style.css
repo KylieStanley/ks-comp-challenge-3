@@ -10,6 +10,7 @@ p {
 h1 {
   font-weight: 400;
   color: #666;
+  margin: 0;
 }
 
 h3 {
@@ -19,7 +20,9 @@ h3 {
 
 h4 {
   color: #9098A7;
-  font-weight: 
+  font-weight: 600;
+  margin: 0;
+  line-height: 2;
 }
 
 input {
@@ -34,13 +37,13 @@ a {
 }
 
 i {
-  color: #5B6677;
+  color: #9098A7;
   font-size: 1rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 180px 1fr;
   grid-template-areas: 
     "sidebar main-content";
 }
@@ -52,7 +55,7 @@ i {
 
 .main-content {
   display: grid;
-  grid-template-rows: 60px 10% 90%;
+  grid-template-rows: 80px 10% 90%;
   grid-area: main-content;
   background-color: white;
 }
@@ -62,7 +65,7 @@ i {
   background-color: #F0F1F4;
   grid-gap: 2px;
   display: grid;
-  grid-template-columns: 60px 1fr repeat(3, 60px);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ikl,0px);
+  grid-template-columns: 80px 1fr repeat(3, 80px);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ikl,0px);
 }
 
 .btn {
@@ -76,21 +79,50 @@ i {
   background-color: #48A3F3;
 }
 
+.btn:hover i {
+  color: white;
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
 .header {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  padding: 0 40px;
+  padding: 20px 50px 0 40px;
 }
 
-.job-title {
+.job-title-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.title-btn {
-  border-radius: 50%
-  border
+.fa-map-marker-alt {
+  color: #9098A7;
+  margin-right: 7px
+}
+
+.preview {
+  font-weight: 400;
+}
+
+.preview:hover {
+  color: #48A3F3;
+  font-weight: 600;
+}
+
+.fa-circle {
+  color: #99C354;
+  font-size: .8rem;
+  padding-right: 3px;
+}
+
+.job-title-buttons {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .job-nav {
@@ -103,7 +135,7 @@ i {
 
 li {
   color: #9098A7;
-  margin: 0 15px 0 0;
+  margin: 0 20px 0 0;
   padding: 25px 0;
   font-size: .85rem;
   font-weight: 700;
@@ -116,10 +148,6 @@ li:hover {
   border-bottom: 3px solid #48A3F3;
 }
 
-
-.preview:hover {
-  color: #48A3F3;
-}
 
 .main-inside {
   background-color: #EEF2F6;
@@ -223,6 +251,15 @@ grid-gap: 14px;
   letter-spacing: .5px;
   color: #5B6677;
   border: 3px solid #6d799342;
+}
+
+.graph-btn:hover {
+  background-color: #48A3F3;
+}
+
+.circle-btn {
+  border-radius: 50%;
+  padding: 10px 12px;
 }
 
 .divider {
@@ -352,6 +389,7 @@ grid-gap: 14px;
 
 h3 .fas {
   padding-right: 5px;
+  color: #5B6677;
 }
 
 .social-hr {
