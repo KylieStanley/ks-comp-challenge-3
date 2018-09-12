@@ -4,33 +4,78 @@
   <title>Static Comp 3</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
   <main class="container">
     <aside class="sidebar"></aside>
     <section class="main-content">
       <nav class="nav">
-        <button></button>
-        <input type="text" name="search">
-        <button></button>
-        <button></button>
+        <button class="user-menu btn"><i class="fas fa-bars"></i></button>
+        <input class="top-search" type="text" name="search">
+        <button class="add-friend btn"><i class="fas fa-user-plus"></i></button>
+        <button class="calendar btn"><i class="far fa-calendar-plus"></i></button>
+        <button class="settings-menu btn"><i class="fas fa-th"></i></button>
       </nav>
       <header class="header">
         <h1>Customer Service Rep</h1>
       </header>
       <section class="main-inside">
         <section class="top-section">
-          <p>Graphs</p>
+          <article class="graphs">
+            <div>graphs
+            <button class="graph-btn">Totals</button>
+            </div>
+            <div>
+              <img src="assets/image.png">
+            <button class="graph-btn">Applicants/Day</button>
+            </div>
+          </article>
+          <div class="divider">
+            <hr noshade class="center-hr">
+            <i class="fas fa-angle-up"></i>
+            <!-- <i class="fas fa-chevron-circle-up"></i> -->
+            <hr noshade class="center-hr">
+          </div>
         </section>
-        <hr>
+
         <section class="bottom-section">
         <article class="job-posting">
+          <header class="job-header">
+            <p class="job-text">JOB DESCRIPTION</p>
+          </header>
+          <section class="job-body">
+          <p class="job-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
+          </section>
         </article>
         <aside class="social-side">
-          <a href="#" class="fa fa-facebook"> Post to Facebook</a>
-          <a href="#" class="fa fa-twitter"> Tweet this Job</a>
-          <a href="#" class="fa fa-linkedin"> Post to LinkedIn</a>
+          <section class="social-box">
+          <a href="#" class="fab fa-facebook-f"> <span>Post to Facebook</span></a>
+          <a href="#" class="fab fa-twitter"> <span>Tweet this Job</span></a>
+          <a href="#" class="fab fa-linkedin"> <span>Post to LinkedIn</span></a>
+          </section>
+          <section class="social-inputs">
+            <article>
+              <h3><i class="fas fa-globe-americas"></i>Link to this Job</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
+              <input class="text-field input" type="text" name="text"><input class="copy-btn" type="button" name="copy" value="Copy">
+              <hr class="social-hr">
+            </article>
+            <article>
+              <h3><i class="fas fa-calculator"></i>Use the Button Widget</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt n</p>
+              <input class="text-field input" type="text" name="text"><input class="copy-btn"  type="button" name="copy" value="Copy">
+              <hr class="social-hr">
+            </article>
+            <article>
+              <h3><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis n</p>
+              <input class="text-field-last input" type="text" name="text">
+            </article>
+          </section>
+
         </aside>
           
         </section>
