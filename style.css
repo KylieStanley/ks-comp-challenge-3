@@ -7,13 +7,26 @@ p {
   font-size: .8rem;
 }
 
-h3 {
-  font-size: 1.2rem;
+h1 {
+  font-weight: 400;
+  color: #666;
 }
 
-span {
-  padding-left: 50px;
-  font-weight: 900;
+h3 {
+  font-size: 1.2rem;
+  color: #5B6677;
+}
+
+h4 {
+  color: #9098A7;
+  font-weight: 
+}
+
+input {
+  border: none;
+  line-height: 0;
+  font-size: 1rem;
+  padding: 0;
 }
 
 a {
@@ -21,8 +34,8 @@ a {
 }
 
 i {
-  color: #9CA3AE;
-  font-size: 1.1rem;
+  color: #5B6677;
+  font-size: 1rem;
 }
 
 .container {
@@ -30,13 +43,11 @@ i {
   grid-template-columns: 170px 1fr;
   grid-template-areas: 
     "sidebar main-content";
-  /*height: 1500px;*/
 }
 
 .sidebar {
   grid-area: sidebar;
   background-color: #374050;
-  /*height: 100%;*/
 }
 
 .main-content {
@@ -44,10 +55,9 @@ i {
   grid-template-rows: 60px 10% 90%;
   grid-area: main-content;
   background-color: white;
-  /*height: 100%;*/
 }
 
-.nav {
+.top-nav {
   border: 1px solid #EBECEF;
   background-color: #F0F1F4;
   grid-gap: 2px;
@@ -59,6 +69,7 @@ i {
   background-color: white;
   border: none;
   margin: 0;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -66,6 +77,48 @@ i {
 }
 
 .header {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding: 0 40px;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-btn {
+  border-radius: 50%
+  border
+}
+
+.job-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+li {
+  color: #9098A7;
+  margin: 0 15px 0 0;
+  padding: 25px 0;
+  font-size: .85rem;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  :
+}
+
+li:hover {
+  color: #666;
+  border-bottom: 3px solid #48A3F3;
+}
+
+
+.preview:hover {
+  color: #48A3F3;
 }
 
 .main-inside {
@@ -74,27 +127,102 @@ i {
   grid-template-rows: 30% 70%;
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .top-section {
 display: grid;
-padding: 10px 30px;
+padding: 30px 40px;
+grid-gap: 14px;
 }
 
-.graphs {
+.graph-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /*height: 250px;*/
+  grid-template-columns: 55% 45%;
 }                                                         
+
+.graph-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%
+}
+
+/*SVG CIRCLE CHART*/
+.single-chart {
+  width: 33%;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0-;
+  max-width: 90%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #DBE4EA;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.teal .circle {
+  stroke: #67B8BF;
+}
+
+.circular-chart.blue .circle {
+  stroke: #48A3F3;
+}
+
+.circular-chart.purple .circle {
+  stroke: #A46DAB;
+}
+
+.percentage {
+  fill: #666;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.text {
+  fill: #9098A7;
+  font-size: 0.2rem;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.graph-btn-section {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.bar-graph {
+  height: 18vw;
+}
 
 .graph-btn {
   width: auto;
   border-radius: 25px;
-  padding: 10px;
+  padding: 10px 15px;
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  color: #5B6677;
+  border: 3px solid #6d799342;
 }
 
 .divider {
@@ -107,7 +235,7 @@ padding: 10px 30px;
 .center-hr {
   width: 47.5%;
   border: none;
-  height: 2px;
+  height: 3px;
   background-color: #6d799342;
   margin: 0;
 }
@@ -125,20 +253,11 @@ padding: 10px 30px;
 
 }
 
-.fa-chevron-circle-up {
-  border: 1.5px solid #6d79930a;
-  border-radius: 50%;
-  background-color: #6d799342;
-  color: white;
-  font-size: 1.2rem;
-}
-
-
 .bottom-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 30px;
-  grid-gap: 30px;
+  padding: 40px;
+  grid-gap: 40px;
 }
 
 .job-posting {
@@ -203,11 +322,9 @@ padding: 10px 30px;
   height: 45px;
 }
 
-input {
-  border: none;
-  line-height: 0;
-  font-size: 1rem;
-  padding: 0;
+.post {
+  padding-left: 50px;
+  font-weight: 900;
 }
 
 .fab {
@@ -241,3 +358,5 @@ h3 .fas {
   width: 100%;
   margin-top: 30px;
 }
+
+
