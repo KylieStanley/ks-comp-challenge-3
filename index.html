@@ -10,11 +10,64 @@
 <body>
   <main class="container">
     <aside class="sidebar">
+      <table>
+        <tr>
+          <th>Main</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-home"></i></td>
+          <td>HOME</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-briefcase"></i></td>
+          <td>JOBS</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-invoice"></i></td>
+          <td>RESUME</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-clipboard"></i></td>
+          <td>TASKS</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-calendar-alt"></i></td>
+          <td>CALENDAR</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Admin</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-user-friends"></i></td>
+          <td>USERS</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-map-marker-alt"></i></td>
+          <td>LOCATIONS</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-people-carry"></i></td>
+          <td>WORKFLOWS</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-book"></i></td>
+          <td>JOB BOARDS</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-share-alt"></i></td>
+          <td>SOCIAL</td>
+        </tr>
+      </table>
+
+
     </aside>
     <section class="main-content">
       <nav class="top-nav">
-        <button class="user-menu btn"><i class="fas fa-bars large"></i></button>
-        <input class="top-search" type="text" name="search">
+        <button class="user-menu btn"><i class="fas fa-caret-left"></i><i class="fas fa-bars large"></i></button>
+        <input class="magnifying" type="text" placeholder="&#xF002;  Search for a job, task, or resume" />
         <button class="add-friend btn"><i class="fas fa-user-plus large"></i></button>
         <button class="calendar btn"><i class="far fa-calendar-plus large"></i></button>
         <button class="settings-menu btn"><i class="fas fa-th large"></i></button>
@@ -23,7 +76,7 @@
         <section class="job-title-section">
           <div class="job-title">
           <h1>Customer Service Representative</h1>
-          <h4><i class="fas fa-map-marker-alt"></i>San Francisco, CA ∙ <span class="preview">Preview this post</span></h4>
+          <h4><i class="fas fa-map-marker-alt pin"></i>San Francisco, CA ∙ <span class="preview">Preview this post</span></h4>
           </div>
           <div class="job-title-buttons">
           <button class="graph-btn"><i class="fas fa-circle"></i>OPEN</button>
@@ -108,7 +161,7 @@
           </article>
           <div class="divider">
             <hr noshade class="center-hr">
-            <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-up graph-btn"></i>
             <hr noshade class="center-hr">
           </div>
         </section>
@@ -116,7 +169,7 @@
         <section class="bottom-section">
           <article class="job-posting">
             <header class="job-header">
-              <p class="job-text">JOB DESCRIPTION</p>
+              <h5 class="job-text">JOB DESCRIPTION</h5>
             </header>
             <section class="job-body">
               <p class="job-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
