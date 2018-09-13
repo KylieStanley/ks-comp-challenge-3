@@ -41,6 +41,10 @@ i {
   font-size: 1rem;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -130,12 +134,14 @@ i {
   list-style-type: none;
   padding: 0;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
+  width: 750px;
 }
 
 li {
   color: #9098A7;
-  margin: 0 20px 0 0;
+  /*margin: 0 20px 0 0;*/
   padding: 25px 0;
   font-size: .85rem;
   font-weight: 700;
@@ -255,6 +261,12 @@ grid-gap: 14px;
 
 .graph-btn:hover {
   background-color: #48A3F3;
+  border: 3px double white;
+  color: white;
+}
+
+.graph-btn:hover .w{
+  color: white;
 }
 
 .circle-btn {
@@ -287,7 +299,6 @@ grid-gap: 14px;
   height: 33px;
   text-align: center;
   padding: 6px;
-
 }
 
 .bottom-section {
@@ -312,7 +323,6 @@ grid-gap: 14px;
 }
 
 .job-body {
-
 }
 
 .job-text {
