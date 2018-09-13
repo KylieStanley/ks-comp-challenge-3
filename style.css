@@ -45,6 +45,12 @@ button{
   cursor: pointer;
 }
 
+hr {
+  border: none;
+  background-color: #6d799342;
+  height: 3px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -283,9 +289,6 @@ grid-gap: 14px;
 
 .center-hr {
   width: 47.5%;
-  border: none;
-  height: 3px;
-  background-color: #6d799342;
   margin: 0;
 }
 
@@ -335,39 +338,11 @@ grid-gap: 14px;
   justify-content: space-between;
 }
 
-.social-hr {
-  width: 90%;
-  align-self: flex-end;
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .social-inputs {
   display: flex;
   flex-direction: column;
 }
 
-.text-field {
-  width: 76%;
-}
-
-.text-field-last {
-  width: 100%
-}
-
-.input {
-  height: 45px;
-}
-
-.copy-btn {
-  background-color: #67B8BF;
-  color: white;
-  padding: 15px;
-  border: none;
-  height: 45px;
-}
 
 .post {
   padding-left: 50px;
@@ -380,6 +355,10 @@ grid-gap: 14px;
   margin: 0 2px 15px;
   text-align: left;
   border-radius: 3px;
+}
+
+.fab:hover {
+  filter: hue-rotate(90deg);
 }
 
 .fa-facebook-f {
@@ -395,6 +374,33 @@ grid-gap: 14px;
 .fa-linkedin {
   background: #3681B8;
   color: white;
+}
+
+.text-field {
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+}
+
+.text-field-last {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.input {
+  height: 45px;
+  box-shadow: 1px 2px 2px #aaaaaa4a;
+}
+
+.copy-btn {
+  background-color: #67B8BF;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-add-on{
+  display: flex;
 }
 
 h3 .fas {
