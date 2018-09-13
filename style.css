@@ -5,6 +5,9 @@
 
 p {
   font-size: .8rem;
+  color: #9098A7;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1 {
@@ -22,14 +25,34 @@ h4 {
   color: #9098A7;
   font-weight: 600;
   margin: 0;
-  line-height: 2;
+  line-height: 2.2;
+}
+
+h5 {
+  margin: 0;
+  font-size: .8rem;
 }
 
 input {
   border: none;
   line-height: 0;
   font-size: 1rem;
-  padding: 0;
+  padding: 15px;
+}
+
+.fa-caret-left {
+  color: #48A3F3;
+  padding: 5px 5px 5px 0;
+  vertical-align: bottom;
+}
+
+.magnifying {
+  font-family: "Font Awesome 5 Free", 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+::placeholder {
+  color: #9098A7;
 }
 
 a {
@@ -41,14 +64,14 @@ i {
   font-size: 1rem;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
 hr {
   border: none;
   background-color: #6d799342;
-  height: 3px;
+  height: 2px;
 }
 
 .container {
@@ -82,7 +105,6 @@ hr {
   background-color: white;
   border: none;
   margin: 0;
-  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -109,9 +131,9 @@ hr {
   justify-content: space-between;
 }
 
-.fa-map-marker-alt {
+.pin {
   color: #9098A7;
-  margin-right: 7px
+  margin: 0 7px;
 }
 
 .preview {
@@ -295,8 +317,7 @@ grid-gap: 14px;
 .fa-angle-up {
   color: #A4AAB5;
   background-color: white;
-  border: 1.5px solid #6d799342;
-  border-radius: 50%;
+  border: 2px solid #6d799342;
   font-size: 1rem;
   width: 33px;
   height: 33px;
@@ -326,6 +347,7 @@ grid-gap: 14px;
 }
 
 .job-body {
+  box-shadow: 0 1px 2px #aaaaaa4a;
 }
 
 .job-text {
@@ -358,7 +380,7 @@ grid-gap: 14px;
 }
 
 .fab:hover {
-  filter: hue-rotate(90deg);
+  filter: saturate(150%);
 }
 
 .fa-facebook-f {
@@ -384,23 +406,28 @@ grid-gap: 14px;
 .text-field-last {
   width: 100%;
   border-radius: 4px;
+  margin-top: 20px
 }
 
 .input {
   height: 45px;
-  box-shadow: 1px 2px 2px #aaaaaa4a;
+  box-shadow: 0 1px 2px #aaaaaa4a;
 }
 
 .copy-btn {
   background-color: #67B8BF;
   color: white;
-  padding: 15px;
   border: none;
   border-radius: 0 4px 4px 0;
 }
 
+.copy-btn:hover {
+  filter: saturate(140%);
+}
+
 .input-add-on{
   display: flex;
+  margin-top: 20px;
 }
 
 h3 .fas {
@@ -409,7 +436,6 @@ h3 .fas {
 }
 
 .social-hr {
-  width: 100%;
   margin-top: 30px;
 }
 
