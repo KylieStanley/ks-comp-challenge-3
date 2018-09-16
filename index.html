@@ -10,13 +10,16 @@
 <body>
   <main class="container">
     <aside class="sidebar" role="sidebar-navigation">
-      <section class=''>
-        <p class="dot">●</p>
-        <h4>Newton Bradley</h4>
+      <section class='side-profile'>
+        <img src="assets/headshot.jpg" class="headshot">
+        <div class="side-name">
+          <h3 class="name">Newton Barley</h3>
+          <i class="fas fa-angle-down"></i>
+        </div>
       </section>
-      <nav class="side-nav-container border-outset">
-          <p>Main</p>
+      <nav class="side-nav-container">
       <ul>
+        <h5 class="side-heading">Main</h5>
         <li class="side-nav">
           <i class="fas fa-home fa-fw"></i><a href="#">HOME</a>
         </li>
@@ -34,38 +37,34 @@
         </li>   
       </ul>   
       </nav>
-      <nav class="side-nav-container border-outset">
-      <p>Admin</p>
+      <nav class="side-nav-container">
         <ul>
+          <h5 class="side-heading">Admin</h5>
           <li class="side-nav">
             <i class="fas fa-user-friends fa-fw"></i><a href="#">USERS</a>
           </li>
           <li class="side-nav">
-            <i class="fas fa-map-marker-alt fa-fw"></i><a href="#">JOBS</a>
+            <i class="fas fa-map-marker-alt fa-fw"></i><a href="#">LOCATIONS</a>
           </li>
           <li class="side-nav">
-            <i class="fas fa-people-carry fa-fw"></i><a href="#">RESUMES</a>
+            <i class="fas fa-people-carry fa-fw"></i><a href="#">WORKFLOWS</a>
           </li>
           <li class="side-nav">
-            <i class="fas fa-book fa-fw"></i><a href="#">TASKS</a></li>
+            <i class="fas fa-book fa-fw"></i><a href="#">JOB BOARDS</a></li>
           <li class="side-nav">
-            <i class="fas fa-share-alt fa-fw"></i><a href="#">CALENDAR</a>
+            <i class="fas fa-share-alt fa-fw"></i><a href="#">SOCIAL</a>
           </li> 
         </ul>
       </nav>
-        <nav class="side-nav-container border-outset">
+        <nav class="side-nav-container">
           <ul>
-            <li>helo </li>
-            <li>hi</li>
-            <li>hi</li>
+            <h5 class="side-heading">Categories</h5>
+            <li class="side-nav nav-sm"><input type="checkbox" class="checkbox administrative red">Administrative</li>
+            <li class="side-nav nav-sm"><input type="checkbox" class="checkbox design">Design</li>
+            <li class="side-nav nav-sm"><input type="checkbox" class="checkbox executive">Executive</li>
+            <li class="side-nav nav-sm"><input type="checkbox" class="checkbox human-resources">Human Resources</li>
           </ul>
         </nav>  
-
-
-    
-     
-
-
     </aside>
     <section class="main-content">
       <nav class="top-nav">
@@ -78,14 +77,14 @@
       <header class="header">
         <section class="job-title-section">
           <div class="job-title">
-          <h1>Customer Service Representative</h1>
-          <h4><i class="fas fa-map-marker-alt pin"></i>San Francisco, CA ∙ <span class="preview">Preview this post</span></h4>
+            <h1>Customer Service Representative</h1>
+            <h3><i class="fas fa-map-marker-alt pin"></i>San Francisco, CA ∙ <span class="preview">Preview this post</span></h3>
           </div>
           <div class="job-title-buttons">
-          <button class="graph-btn"><i class="fas fa-circle"></i>OPEN</button>
-          <button class="graph-btn circle-btn"><i class="fas fa-bookmark w"></i></button>
-          <button class="graph-btn circle-btn"><i class="fas fa-pencil-alt w"></i></button>
-          <button class="graph-btn circle-btn"><i class="fas fa-trash-alt w"></i></button>
+            <button class="graph-btn"><i class="fas fa-circle"></i>OPEN</button>
+            <button class="graph-btn circle-btn"><i class="fas fa-bookmark w"></i></button>
+            <button class="graph-btn circle-btn"><i class="fas fa-pencil-alt w"></i></button>
+            <button class="graph-btn circle-btn"><i class="fas fa-trash-alt w"></i></button>
           </div>  
         </section>
         <ul class="job-nav">
@@ -168,14 +167,29 @@
             <hr noshade class="center-hr">
           </div>
         </section>
-
         <section class="bottom-section">
           <article class="job-posting">
             <header class="job-header">
-              <h5 class="job-text">JOB DESCRIPTION</h5>
+              <h4 class="job-text">JOB DESCRIPTION</h4>
+              <button class="edit-btn"><i class="fas fa-pencil-alt edit-icon"></i>EDIT</button>
             </header>
             <section class="job-body">
-              <p class="job-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
+              <h5 class="job-item">POSITION TITLE</h5>
+              <h3 class="job-item">Customer Service Rep</h3>
+              <h5 class="job-item">LOCATION</h5>
+              <h3 class="job-item">San Francisco, CA</h3>
+              <h5 class="job-item">EMPLOYMENT TYPE</h5>
+              <h3 class="job-item">Full-Time</h3>
+              <h5 class="job-item">EXPERIENCE</h5>
+              <h3 class="job-item">Mid-Level</h3>
+              <h5 class="job-item">STATUS</h5>
+              <h3 class="job-item">Open</h3>
+              <h5 class="job-item">DESCRIPTION</h5>
+              <h3 class="job-paragraph job-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</h3>
+              <H5 class="job-item">HIRING LEAD</H5>
+              <H3 class="job-item">Tom Tizzy</H3>
+              <H5>APPROVED SALARY</H5>
+              <h3>$58,000</h3>       
             </section>
           </article>
           <aside class="social-side">
@@ -186,7 +200,7 @@
             </section>
             <section class="social-inputs">
               <article>
-                <h3><i class="fas fa-globe-americas"></i>Link to this Job</h3>
+                <h2><i class="fas fa-globe-americas"></i>Link to this Job</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
                 <div class="input-add-on">
                   <input class="text-field input" type="text" name="text">
@@ -195,7 +209,7 @@
                 <hr noshade class="social-hr">
               </article>
               <article>
-                <h3><i class="fas fa-calculator"></i>Use the Button Widget</h3>
+                <h2><i class="fas fa-calculator"></i>Use the Button Widget</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt n</p>
                 <div class="input-add-on">
                   <input class="text-field input" type="text" name="text">
@@ -204,7 +218,7 @@
                 <hr noshade class="social-hr">
               </article>
               <article>
-               <h3><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h3>
+               <h2><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis n</p>
                 <input class="text-field-last input" type="text" name="text">
               </article>
