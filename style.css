@@ -40,23 +40,21 @@ input {
   padding: 15px;
 }
 
-.fa-caret-left {
-  color: #48A3F3;
-  padding: 5px 5px 5px 0;
-  vertical-align: bottom;
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-.magnifying {
-  font-family: "Font Awesome 5 Free", 'Open Sans', sans-serif;
-  font-weight: 900;
-}
-
-::placeholder {
+li {
   color: #9098A7;
+  font-size: .85rem;
+  font-weight: 700;
 }
 
 a {
   text-align: center;
+  text-decoration: none;
+  color: #9098A7;
 }
 
 i {
@@ -81,9 +79,43 @@ hr {
     "sidebar main-content";
 }
 
+.dot {
+  font-size: 3rem;
+  text-align: center;
+  padding: -5px;
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: #374050;
+  display: grid;
+  grid-template-rows: 180px repeat(2, 280px) 1fr;
+}
+
+
+.border-outset {
+  padding: 25px 0;
+  border-top: 5px double #313948;
+  box-shadow: inset 0px 0.7px 0.5px #9098a72e;
+}
+
+.side-nav {
+  border-left: 3px solid transparent;
+  padding: 12px 0 12px 2px;
+}
+
+.side-nav:hover i,
+.side-nav:hover a{
+  color: #fff;
+}
+
+.side-nav:hover {
+  border-left: 3px solid #48A3F3;
+  background-color: #313948;
+}
+
+.side-nav i {
+  margin: 0 10px;
 }
 
 .main-content {
@@ -99,6 +131,21 @@ hr {
   grid-gap: 2px;
   display: grid;
   grid-template-columns: 80px 1fr repeat(3, 80px);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ikl,0px);
+}
+
+.fa-caret-left {
+  color: #48A3F3;
+  padding: 5px 5px 5px 0;
+  vertical-align: bottom;
+}
+
+.magnifying {
+  font-family: "Font Awesome 5 Free", 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+::placeholder {
+  color: #9098A7;
 }
 
 .btn {
@@ -159,29 +206,21 @@ hr {
 
 .job-nav {
   display: flex;
-  list-style-type: none;
-  padding: 0;
   align-items: center;
   justify-content: space-between;
   margin: 0;
   width: 750px;
 }
 
-li {
-  color: #9098A7;
-  /*margin: 0 20px 0 0;*/
-  padding: 25px 0;
-  font-size: .85rem;
-  font-weight: 700;
+.li-bottom-border {
   border-bottom: 3px solid transparent;
-  :
+  padding: 25px 0;
 }
 
-li:hover {
+.li-bottom-border:hover {
   color: #666;
   border-bottom: 3px solid #48A3F3;
 }
-
 
 .main-inside {
   background-color: #EEF2F6;
@@ -190,9 +229,9 @@ li:hover {
 }
 
 .top-section {
-display: grid;
-padding: 30px 40px;
-grid-gap: 14px;
+  display: grid;
+  padding: 30px 40px;
+  grid-gap: 14px;
 }
 
 .graph-section {
