@@ -171,7 +171,7 @@ hr {
   font-family: 'Font Awesome 5 Free';
   font-size: 10px;
   font-weight: 900;
-  left: 4px;
+  left: 3px;
   position: absolute;
 }
 
@@ -192,7 +192,6 @@ hr {
 }
 
 /*MAIN AREA*/
-
 .main-content {
   display: grid;
   grid-template-rows: 80px 10% 90%;
@@ -201,7 +200,7 @@ hr {
 }
 
 .top-nav {
-  border: 1px solid #EBECEF;
+  border: 1px solid #F0F1F4;
   background-color: #F0F1F4;
   grid-gap: 2px;
   display: grid;
@@ -448,12 +447,9 @@ hr {
 }
 
 .job-posting {
-  background-color: white;
   display: grid;
   grid-template-rows: 10% 90%;
-  background-color: gray;
-    border-radius: 3px 3px 0 0;
-
+  border-radius: 3px;
 }
 
 .job-header {
@@ -469,7 +465,14 @@ hr {
   font-size: .9rem;
   color: #fff;
   font-weight: bold;
-  padding: 9px 16px;
+  padding: 9px 18px;
+  border-radius: 3px;
+  border-top: 1px outset #cecece26;
+  box-shadow: 0 1px 1px #56565682;
+}
+
+.edit-btn:hover {
+  filter: saturate(150%);
 }
 
 .edit-icon {
@@ -478,27 +481,35 @@ hr {
   padding-right: 4px;
 }
 
-.job-body {
+.job-container {
+  background-color: #fff;
   box-shadow: 0 1px 2px #aaaaaa4a;
+  padding: 0 33px 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.job-body {
   display: grid;
   grid-template-columns: 165px 1fr;
-  align-items: center;
-  padding: 20px;
   grid-row-gap: 2px;
-  background-color: #fff;
-
+  background-color: #F0F1F4;
+  border-radius: 0 0 3px 3px;
+  height: 100%;
 }
 
 .job-item {
+  padding-top: 30px;
+  line-height: 1;
+  height: 100%;
+  background-color: #fff;
 }
 
 .job-paragraph {
   line-height: 1.1;
-  align-self: end;
 }
 
 .job-text {
-  padding: 20px;
+  padding: 0 40px 0 33px;
 }
 
 /* BOTTOM RIGHT SIDEBAR*/
@@ -568,7 +579,7 @@ hr {
 }
 
 .copy-btn:hover {
-  filter: saturate(140%);
+  filter: saturate(150%);
 }
 
 .input-add-on{
