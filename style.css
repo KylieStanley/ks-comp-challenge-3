@@ -312,13 +312,26 @@ hr {
 .graph-section {
   display: grid;
   grid-template-columns: 55% 45%;
-}                                                         
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 
+  "circlegraph bargraph"
+  "totals applicants"
+} 
+
+.graph1 {
+  grid-area: circlegraph;
+} 
+
+.graph2 {
+  grid-area: bargraph;
+}                                                       
 
 .graph-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /*flex-flow: row nowrap;*/
   width: 100%
 }
 
@@ -330,7 +343,7 @@ hr {
 .circular-chart {
   display: block;
   max-width: 90%;
-  max-height: 250px;
+  /*max-height: 250px;*/
 }
 
 .circle-bg {
@@ -379,18 +392,12 @@ hr {
   text-anchor: middle;
 }
 
-.graph-btn-section {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
-
 .bar-graph {
   height: 18vw;
 }
 
 .graph-btn {
-  width: auto;
+  margin: auto;
   border-radius: 25px;
   padding: 10px 15px;
   font-size: .8rem;
@@ -398,6 +405,16 @@ hr {
   letter-spacing: .5px;
   color: #5B6677;
   border: 3px solid #6d799342;
+}
+
+.btn-1 {
+  width: 250px;
+  grid-area: totals;
+}
+
+.btn-2 {
+  width: 150px;
+  grid-area: applicants; 
 }
 
 .graph-btn:hover {
@@ -613,6 +630,32 @@ h2 .fas {
 } 
 
 @media screen and (max-width: 855px) {
+  .graph-section {
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+    grid-template-areas: 
+      "circlegraph" 
+      "totals" 
+      "bargraph"
+      "applicants"
+  }
 
+  .bar-graph {
+    height: 28vw;
+  } 
+
+  .circular-chart {
+    max-width: 85%;
+    margin-left: 10px;
+  }
+
+  .graph-box {
+    justify-content: center;
+  }
+
+  .graph-btn {
+    margin: 20px auto;
+    align-self: baseline;
+  }
 
 }
