@@ -14,7 +14,7 @@ p {
 h1 {
   font-weight: 400;
   color: #666;
-  margin: 0;
+  margin: 0 18px 0 0;
 }
 
 h2 {
@@ -71,6 +71,7 @@ a {
 i {
   color: #9098A7;
   font-size: 1rem;
+  display: contents;
 }
 
 button {
@@ -316,8 +317,8 @@ hr {
 .graph-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: row nowrap;
+  justify-content: space-around;
+  /*flex-flow: row nowrap;*/
   width: 100%
 }
 
@@ -328,7 +329,6 @@ hr {
 
 .circular-chart {
   display: block;
-  margin: 0-;
   max-width: 90%;
   max-height: 250px;
 }
@@ -449,12 +449,12 @@ hr {
 .job-posting {
   display: grid;
   grid-template-rows: 10% 90%;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .job-header {
   background-color: #727E93;
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   color: white;
   display: flex;
   align-items: center;
@@ -466,7 +466,7 @@ hr {
   color: #fff;
   font-weight: bold;
   padding: 9px 18px;
-  border-radius: 3px;
+  border-radius: 4px;
   border-top: 1px outset #cecece26;
   box-shadow: 0 1px 1px #56565682;
 }
@@ -485,7 +485,7 @@ hr {
   background-color: #fff;
   box-shadow: 0 1px 2px #aaaaaa4a;
   padding: 0 33px 0;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 4px 4px;
 }
 
 .job-body {
@@ -493,7 +493,7 @@ hr {
   grid-template-columns: 165px 1fr;
   grid-row-gap: 2px;
   background-color: #F0F1F4;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 4px 4px;
   height: 100%;
 }
 
@@ -596,4 +596,23 @@ h2 .fas {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1057px) {
+  .fa-caret-left {
+    display: none !important;
+  }
 
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "main-content";
+  }
+
+  .sidebar {
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 855px) {
+
+
+}
