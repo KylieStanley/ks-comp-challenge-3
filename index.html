@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <main class="container">
@@ -78,29 +79,36 @@
         <section class="job-title-section">
           <div class="job-title">
             <h1>Customer Service Representative</h1>
-            <h3><i class="fas fa-map-marker-alt pin"></i>San Francisco, CA ∙ <span class="preview">Preview this post</span></h3>
           </div>
+          <div class="job-location">
+            <h3><i class="fas fa-map-marker-alt pin"></i>San Francisco, CA  <span class="bullet">∙</span></h3>
+            <p class="preview">Preview this post</p>
+          </div>
+        </section>
           <div class="job-title-buttons">
-            <button class="graph-btn"><i class="fas fa-circle"></i>OPEN</button>
+            <button class="graph-btn open-btn"><i class="fas fa-circle"></i><span class="open">OPEN</span></button>
             <button class="graph-btn circle-btn"><i class="fas fa-bookmark w"></i></button>
             <button class="graph-btn circle-btn"><i class="fas fa-pencil-alt w"></i></button>
             <button class="graph-btn circle-btn"><i class="fas fa-trash-alt w"></i></button>
           </div>  
-        </section>
         <ul class="job-nav">
-          <li class="li-bottom-border">SUMMARY</li>
-          <li class="li-bottom-border">APPLICANTS</li>
-          <li class="li-bottom-border">JOB BOARD</li>
-          <li class="li-bottom-border">INTERVIEWS</li>
-          <li class="li-bottom-border">ACTIVITY</li>
-          <li class="li-bottom-border">BROADCAST</li>
-          <li class="li-bottom-border">NOTIFICATIONS</li>
+          <div class="top-nav-collapsed">
+            <i class="fas fa-angle-left"></i>
+            <li class="li-bottom-border show">SUMMARY</li>
+            <i class="fas fa-angle-right"></i> 
+          </div>
+          <li class="li-bottom-border hide">APPLICANTS</li>
+          <li class="li-bottom-border hide">JOB BOARD</li>
+          <li class="li-bottom-border hide">INTERVIEWS</li>
+          <li class="li-bottom-border hide">ACTIVITY</li>
+          <li class="li-bottom-border hide">BROADCAST</li>
+          <li class="li-bottom-border hide">NOTIFICATIONS</li>
         </ul>
       </header>
       <section class="main-inside">
-        <section class="top-section">
+        <section class="top-section">     
           <article class="graph-section">
-            <div class="graph-box">
+            <div class="graph-box graph1">
               <div class="single-chart">
                 <svg viewBox="0 0 36 36" class="circular-chart teal">
                   <path class="circle-bg"
@@ -153,13 +161,11 @@
                 </svg>
               </div>
             </div>
-            <div class="graph-box">
+            <div class="graph-box graph2">
               <img class="bar-graph" src="assets/image.png">
             </div>
-          </article>
-          <article class="graph-btn-section">
             <button class="graph-btn">TOTALS - Out of 5,231 views</button>
-            <button class="graph-btn">APPLICANTS/DAY</button>
+            <button class="graph-btn btn-2">APPLICANTS/DAY</button>
           </article>
           <div class="divider">
             <hr noshade class="center-hr">
@@ -175,55 +181,54 @@
             </header>
             <section class="job-container">
               <section class="job-body">            
-              <h5 class="job-item">POSITION TITLE</h5>         
-              <h3 class="job-item">Customer Service Rep</h3>
-              <h5 class="job-item">LOCATION</h5>
-              <h3 class="job-item">San Francisco, CA</h3>
-              <h5 class="job-item">EMPLOYMENT TYPE</h5>
-              <h3 class="job-item">Full-Time</h3>
-              <h5 class="job-item">EXPERIENCE</h5>
-              <h3 class="job-item">Mid-Level</h3>
-              <h5 class="job-item">STATUS</h5>
-              <h3 class="job-item">Open</h3>
-              <h5 class="job-item">DESCRIPTION</h5>
-              <h3 class="job-paragraph job-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </h3>
-              <h5 class="job-item">HIRING LEAD</h5>
-              <h3 class="job-item">Tom Tizzy</h3>
-              <h5 class="job-item">APPROVED SALARY</h5>
-              <h3 class="job-item">$58,000</h3>       
-            </section>
-            </section>
-            
+                <h5 class="job-item">POSITION TITLE</h5>         
+                <h3 class="job-item">Customer Service Rep</h3>
+                <h5 class="job-item">LOCATION</h5>
+                <h3 class="job-item">San Francisco, CA</h3>
+                <h5 class="job-item">EMPLOYMENT TYPE</h5>
+                <h3 class="job-item">Full-Time</h3>
+                <h5 class="job-item">EXPERIENCE</h5>
+                <h3 class="job-item">Mid-Level</h3>
+                <h5 class="job-item">STATUS</h5>
+                <h3 class="job-item">Open</h3>
+                <h5 class="job-item">DESCRIPTION</h5>
+                <h3 class="job-paragraph job-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </h3>
+                <h5 class="job-item">HIRING LEAD</h5>
+                <h3 class="job-item">Tom Tizzy</h3>
+                <h5 class="job-item">APPROVED SALARY</h5>
+                <h3 class="job-item">$58,000</h3>       
+              </section>
+            </section>         
           </article>
           <aside class="social-side">
             <section class="social-box">
-              <a href="#" class="fab fa-facebook-f"> <span class="post">Post to Facebook</span></a>
-              <a href="#" class="fab fa-twitter"> <span class="post">Tweet this Job</span></a>
-              <a href="#" class="fab fa-linkedin"> <span class="post">Post to LinkedIn</span></a>
+              <button class="social-btn fb-btn"><i class="fab fa-facebook-f fa-fw"></i>Post<span class="hide-social"> to Facebook</span></button>
+              <button class="social-btn tweet-btn"><i class="fab fa-twitter fa-fw"></i>Tweet<span class="hide-social"> this Job</span></button>
+              <button class="social-btn linkedin-btn"><i class="fab fa-linkedin fa-fw"></i>Post<span class="hide-social"> to Linkedin</span></button>
             </section>
             <section class="social-inputs">
-              <article>
+              <article class="input1">
                 <h2><i class="fas fa-globe-americas"></i>Link to this Job</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna a</p>
                 <div class="input-add-on">
-                  <input class="text-field input" type="text" name="text">
+                  <input aria-label="field to copy link to job" class="text-field input" type="text" name="text">
                   <input class="copy-btn" type="button" name="copy" value="Copy">
                 </div>
                 <hr noshade class="social-hr">
               </article>
-              <article>
+              <article class="input2">
                 <h2><i class="fas fa-calculator"></i>Use the Button Widget</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt n</p>
                 <div class="input-add-on">
                   <input class="text-field input" type="text" name="text">
-                  <input class="copy-btn" type="button" name="copy" value="Copy">
+                  <input aria-label="input to embed widget to site" class="copy-btn" type="button" name="copy" value="Copy">
                 </div>
                 <hr noshade class="social-hr">
               </article>
-              <article>
+              <article class="input3">
                <h2><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis n</p>
-                <input class="text-field-last input" type="text" name="text">
+                <input aria-label="input field to enter email address" class="text-field-last input" type="text" name="text">
               </article>
             </section>
           </aside>

@@ -1,59 +1,59 @@
-/*GENERAL STYLES*/
+/*-----GENERAL STYLES-----*/
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
 p {
-  font-size: .8rem;
   color: #9098A7;
+  font-size: .8rem;
   line-height: 1.5;
   margin: 0;
 }
 
 h1 {
-  font-weight: 400;
   color: #666;
+  font-weight: 400;
   margin: 0 18px 0 0;
 }
 
 h2 {
-  font-size: 1.2rem;
   color: #5B6677;
+  font-size: 1.2rem;
 }
 
 h3 {
   color: #9098A7;
-  font-weight: 600;
-  margin: 0;
-  line-height: 2.2;
   font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 2.2;
+  margin: 0;
 }
 
 h4 {
   color: #fff;
-  margin: 0;
   font-size: .9rem;
+  margin: 0;
 }
 
 h5 {
   color: #727E93;
-;
-  margin: 0;
   font-weight: 700;
+  margin: 0;
 }
 
 input {
   border: none;
-  line-height: 0;
   font-size: 1rem;
+  line-height: 0;
+  overflow: hidden;
   padding: 15px;
 }
 
 ul {
-  padding: 0;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -63,25 +63,25 @@ li {
 }
 
 a {
+  color: #9098A7;
   text-align: center;
   text-decoration: none;
-  color: #9098A7;
 }
 
 i {
   color: #9098A7;
-  font-size: 1rem;
   display: contents;
+  font-size: 1rem;
 }
 
 button {
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
 hr {
-  border: none;
   background-color: #6d799342;
+  border: none;
   height: 2px;
 }
 
@@ -92,19 +92,19 @@ hr {
     "sidebar main-content";
 }
 
-/*SIDEBAR STYLING*/
+/*-----SIDEBAR STYLING-----*/
 .sidebar {
-  grid-area: sidebar;
   background-color: #374050;
   display: grid;
+  grid-area: sidebar;
   grid-template-rows: 190px repeat(2, 280px) 1fr;
 }
 
 .side-profile {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .headshot {
@@ -113,8 +113,8 @@ hr {
 }
 
 .side-name {
-  display: flex;
   align-items: baseline;
+  display: flex;
 }
 
 .side-name h3 {
@@ -123,14 +123,14 @@ hr {
 }
 
 .side-nav-container {
-  padding: 25px 0;
   border-top: 5px double #313948;
   box-shadow: inset 0px 0.7px 0.5px #9098a72e;
+  padding: 25px 0;
 }
 
 .side-heading {
-  padding: 0 0 15px 18px;
   color: #67748B;
+  padding: 0 0 15px 18px;
 }
 
 .side-nav {
@@ -144,8 +144,8 @@ hr {
 }
 
 .side-nav:hover {
-  border-left: 3px solid #48A3F3;
   background-color: #313948;
+  border-left: 3px solid #48A3F3;
 }
 
 .side-nav i {
@@ -157,10 +157,10 @@ hr {
 }
 
 .checkbox {
-  margin: 0 12px 0 18px;
   -webkit-appearance: none;
   background-color: red;
   border-radius: 3px;
+  margin: 0 12px 0 18px;
   padding: 8px;
   position: relative;
   vertical-align: text-bottom;
@@ -192,20 +192,20 @@ hr {
   background-color: #4AA68B;
 }
 
-/*MAIN AREA*/
+/*-----MAIN AREA-----*/
 .main-content {
-  display: grid;
-  grid-template-rows: 80px 10% 90%;
-  grid-area: main-content;
   background-color: white;
+  display: grid;
+  grid-area: main-content;
+  grid-template-rows: 80px 10% 90%;
 }
 
 .top-nav {
-  border: 1px solid #F0F1F4;
   background-color: #F0F1F4;
-  grid-gap: 2px;
+  border: 1px solid #F0F1F4;
   display: grid;
-  grid-template-columns: 80px 1fr repeat(3, 80px);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ikl,0px);
+  grid-gap: 2px;
+  grid-template-columns: 80px 1fr repeat(3, 80px);
 }
 
 .fa-caret-left {
@@ -243,23 +243,38 @@ hr {
 
 .header {
   display: grid;
+  grid-template-areas: "title buttons"
+                       "navigation navigation";
+  grid-template-columns: 1fr 265px;
   grid-template-rows: 2fr 1fr;
-  padding: 20px 50px 0 40px;
+  padding: 20px 40px 0;
 }
 
 .job-title-section {
+  grid-area: title;
+  align-items: center;
+  display: grid;
+}
+
+.job-title {
+  align-self: flex-end;
+}
+
+.job-location {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-self: flex-start;
 }
 
 .pin {
   color: #9098A7;
-  margin: 0 7px;
+  margin: 0 6px 0 2px;
 }
 
 .preview {
-  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.2;
+  margin-left: 5px;
 }
 
 .preview:hover {
@@ -274,17 +289,30 @@ hr {
 }
 
 .job-title-buttons {
-  width: 260px;
+  grid-area: buttons;
   display: flex;
+  align-self: center;
   justify-content: space-between;
 }
 
+.circle-btn {
+  border-radius: 50%;
+  padding: 10px 12px;
+}
+
 .job-nav {
-  display: flex;
+  grid-area: navigation;
   align-items: center;
+  display: flex;
   justify-content: space-between;
   margin: 0;
-  width: 750px;
+  width: 750px; 
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: #48A3F3;
+  display: none !important;
 }
 
 .li-bottom-border {
@@ -293,8 +321,9 @@ hr {
 }
 
 .li-bottom-border:hover {
-  color: #666;
   border-bottom: 3px solid #48A3F3;
+  color: #666;
+  cursor: pointer;
 }
 
 .main-inside {
@@ -305,24 +334,37 @@ hr {
 
 .top-section {
   display: grid;
-  padding: 30px 40px;
   grid-gap: 14px;
+  padding: 30px 40px;
 }
 
 .graph-section {
+  align-items: center;
   display: grid;
   grid-template-columns: 55% 45%;
-}                                                         
+  grid-template-rows: 2fr 1fr;
+  justify-content: center;
+  grid-template-areas: 
+  "circlegraph bargraph"
+  "totals applicants"
+} 
+
+.graph1 {
+  grid-area: circlegraph;
+} 
+
+.graph2 {
+  grid-area: bargraph;
+}                                                       
 
 .graph-box {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-around;
-  /*flex-flow: row nowrap;*/
   width: 100%
 }
 
-/*CIRCLE CHARTS*/
+/*-----CIRCLE CHARTS-----*/
 .single-chart {
   width: 30%;
 }
@@ -330,7 +372,6 @@ hr {
 .circular-chart {
   display: block;
   max-width: 90%;
-  max-height: 250px;
 }
 
 .circle-bg {
@@ -340,10 +381,10 @@ hr {
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
   animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.8;
 }
 
 @keyframes progress {
@@ -366,9 +407,9 @@ hr {
 
 .percentage {
   fill: #666;
-  font-weight: bold;
   font-family: 'Titillium Web', sans-serif;
   font-size: 0.5em;
+  font-weight: bold;
   text-anchor: middle;
 }
 
@@ -379,25 +420,30 @@ hr {
   text-anchor: middle;
 }
 
-.graph-btn-section {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
-
 .bar-graph {
   height: 18vw;
 }
 
 .graph-btn {
-  width: auto;
   border-radius: 25px;
-  padding: 10px 15px;
+  border: 3px solid #6d799342;
+  color: #5B6677;
   font-size: .8rem;
   font-weight: bold;
   letter-spacing: .5px;
-  color: #5B6677;
-  border: 3px solid #6d799342;
+  margin: auto;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.btn-1 {
+  grid-area: totals;
+  width: 250px;
+}
+
+.btn-2 {
+  grid-area: applicants; 
+  width: 150px;
 }
 
 .graph-btn:hover {
@@ -410,65 +456,60 @@ hr {
   color: white;
 }
 
-.circle-btn {
-  border-radius: 50%;
-  padding: 10px 12px;
-}
-
 .divider {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .center-hr {
-  width: 47.5%;
   margin: 0;
+  width: 47.5%;
 }
 
 .fa-angle-up {
-  color: #A4AAB5;
   background-color: white;
   border: 2px solid #6d799342;
+  color: #A4AAB5;
   font-size: 1rem;
-  width: 33px;
   height: 33px;
-  text-align: center;
   padding: 6px;
+  text-align: center;
+  width: 33px;
 }
 
-/*LOWER MAIN SECTION*/
+/*-----LOWER MAIN SECTION-----*/
 .bottom-section {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 2fr 1fr;
-  padding: 40px;
+  padding: 20px 40px 40px;
 }
 
 .job-posting {
-  display: grid;
-  grid-template-rows: 10% 90%;
   border-radius: 4px;
+  display: grid;
+  grid-template-rows: 63px 1fr;
 }
 
 .job-header {
+  align-items: center;
   background-color: #727E93;
   border-radius: 4px 4px 0 0;
   color: white;
   display: flex;
-  align-items: center;
 }
 
 .edit-btn {
   background-color: #7B8BA6;
-  font-size: .9rem;
-  color: #fff;
-  font-weight: bold;
-  padding: 9px 18px;
   border-radius: 4px;
   border-top: 1px outset #cecece26;
   box-shadow: 0 1px 1px #56565682;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: bold;
+  padding: 9px 18px;
 }
 
 .edit-btn:hover {
@@ -483,25 +524,25 @@ hr {
 
 .job-container {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 2px #aaaaaa4a;
   padding: 0 33px 0;
-  border-radius: 0 0 4px 4px;
 }
 
 .job-body {
-  display: grid;
-  grid-template-columns: 165px 1fr;
-  grid-row-gap: 2px;
   background-color: #F0F1F4;
   border-radius: 0 0 4px 4px;
+  display: grid;
+  grid-row-gap: 2px;
+  grid-template-columns: 165px 1fr;
   height: 100%;
 }
 
 .job-item {
-  padding-top: 30px;
-  line-height: 1;
-  height: 100%;
   background-color: #fff;
+  height: 100%;
+  line-height: 1;
+  padding-top: 30px;
 }
 
 .job-paragraph {
@@ -512,48 +553,64 @@ hr {
   padding: 0 40px 0 33px;
 }
 
-/* BOTTOM RIGHT SIDEBAR*/
+/*-----BOTTOM RIGHT SIDEBAR-----*/
 .social-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.social-inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.post {
-  padding-left: 50px;
-  font-weight: 900;
-}
-
-.fab {
-  padding: 15px;
-  text-decoration: none;
-  margin: 0 2px 15px;
-  text-align: left;
+.social-btn {
   border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.1;
+  margin-bottom: 15px;
+  padding: 17px;
+  position: relative;
+  word-spacing: 1px;
 }
 
-.fab:hover {
+.social-btn:hover {
   filter: saturate(150%);
 }
 
-.fa-facebook-f {
-  background: #5070BB;
+.fab {
   color: white;
+  left: 10px;
+  position: absolute;
+  text-decoration: none;
 }
 
-.fa-twitter {
-  background: #48A9E9;
-  color: white;
+.fb-btn {
+  background-color: #5070BB;
 }
 
-.fa-linkedin {
-  background: #3681B8;
-  color: white;
+.tweet-btn {
+  background-color: #48A9E9;
+}
+
+.linkedin-btn {
+  background-color: #3681B8;
+}
+
+.social-inputs {
+  display: grid;
+  grid-template-areas: 'input-one' 
+  'input-two' 
+  'input-three';
+}
+
+.input1 {
+  grid-area: input-one;
+}
+
+.input2 {
+  grid-area: input-two;
+}
+
+.input3 {
+  grid-area: input-three; 
 }
 
 .text-field {
@@ -562,20 +619,20 @@ hr {
 }
 
 .text-field-last {
-  width: 100%;
   border-radius: 4px;
-  margin-top: 20px
+  margin-top: 20px;
+  width: 100%;
 }
 
 .input {
-  height: 45px;
   box-shadow: 0 1px 2px #aaaaaa4a;
+  height: 45px;
 }
 
 .copy-btn {
   background-color: #67B8BF;
-  color: white;
   border-radius: 0 4px 4px 0;
+  color: white;
 }
 
 .copy-btn:hover {
@@ -597,14 +654,14 @@ h2 .fas {
 }
 
 @media screen and (max-width: 1057px) {
-  .fa-caret-left {
-    display: none !important;
+  
+  .container {
+    grid-template-areas: "main-content";
+    grid-template-columns: 1fr;
   }
 
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "main-content";
+  .fa-caret-left {
+    display: none !important;
   }
 
   .sidebar {
@@ -613,6 +670,158 @@ h2 .fas {
 } 
 
 @media screen and (max-width: 855px) {
+  
+  .job-nav {
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .top-nav-collapsed {
+    align-items: center;
+    display: flex;
+  }
 
+  .fa-angle-left,
+  .fa-angle-right {
+    color: #48A3F3;
+    display: inline-block !important;
+    padding: 0 10px;
+  }
+
+  .fa-angle-left:hover,
+  .fa-angle-right:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+  }
+
+  .li-bottom-border:hover {
+    border-color: transparent;
+    color: #9098A7;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .graph-section {
+    grid-template-areas: "circlegraph" 
+                         "totals" 
+                         "bargraph"
+                         "applicants";
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 1fr 3fr 1fr;
+  }
+
+  .graph-box {
+    justify-content: center;
+  }
+
+  .graph1 {
+    max-width: 85vw;
+  }
+  
+  .circular-chart {
+    margin-left: 27px;
+    max-width: 85%;
+  }
+
+  .bar-graph {
+    height: 28vw;
+  } 
+
+  .graph-btn {
+    align-self: baseline;
+    margin: 12px auto;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .job-item {
+    line-height: 1.5;
+    padding: 12px 0;
+  }
+
+  .social-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social-btn {
+    width: 32%; 
+  }
+
+  .social-inputs {
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+    grid-template-areas: "input-one input-two" 
+                         "input-three input-three";
+    padding-top: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  
+  .top-section {
+    padding: 20px 40px;
+  }
+
+  .header {
+    grid-template-areas: "title title" 
+                         "buttons navigation";
+    grid-template-columns: 265px 1fr;
+  }
+
+  .job-title-buttons {
+    justify-content: flex-start;
+  }
+
+  .open-btn,
+  .circle-btn {
+    align-self: center;
+    margin: 12px 10px 12px 0;
+  }
+
+  .graph1 {
+    max-width: 100%;
+  }
+
+  .circular-chart {
+    margin: 0;
+  }
+
+  .bar-graph {
+    height: 200px;
+  }
+
+  .social-btn {
+    padding: 15px;
+  }
+
+  .hide-social {
+    display: none;
+  }
+
+  .social-inputs {
+    grid-template-areas: 'input-one' 
+                         'input-two' 
+                         'input-three';
+  }
+}
+
+@media screen and (max-width: 490px) {
+.header {
+  padding: 20px 20px 0;
+  }
+
+  .top-section {
+    padding: 20px 20px;
+  }
+
+  .bottom-section {
+    padding: 20px 20px;
+  }
 }
