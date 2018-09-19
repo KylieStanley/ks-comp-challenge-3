@@ -301,6 +301,7 @@ hr {
   padding: 10px 11px !important;
 }
 
+/*-----TOP NAVIGATION LINKS-----*/
 .job-nav {
   grid-area: navigation;
   align-items: center;
@@ -333,6 +334,7 @@ hr {
   grid-template-rows: 30% 70%;
 }
 
+/*-----GRAPHS-----*/
 .top-section {
   border-top: 2px solid #E1E7EB;
   display: grid;
@@ -366,7 +368,7 @@ hr {
   width: 100%
 }
 
-/*-----CIRCLE CHARTS-----*/
+/*-----PIE/BAR CHARTS-----*/
 .single-chart {
   width: 30%;
 }
@@ -666,6 +668,8 @@ h2 .fas {
   margin-top: 30px;
 }
 
+/*-----MEDIA QUERIES-----*/
+
 @media screen and (max-width: 1057px) {
   
   .container {
@@ -827,6 +831,7 @@ h2 .fas {
 }
 
 @media screen and (max-width: 608px) {
+  
   .job-item {
     align-items: center; 
     display: flex;
@@ -844,6 +849,7 @@ h2 .fas {
 }
 
 @media screen and (max-width: 490px) {
+
   .header {
     grid-template-columns: 200px 1fr;
     padding: 15px 20px 0;
