@@ -297,7 +297,7 @@ hr {
 
 .circle-btn {
   border-radius: 50%;
-  padding: 10px 12px;
+  padding: 10px 11px !important;
 }
 
 .job-nav {
@@ -438,12 +438,10 @@ hr {
 
 .btn-1 {
   grid-area: totals;
-  width: 250px;
 }
 
 .btn-2 {
   grid-area: applicants; 
-  width: 150px;
 }
 
 .graph-btn:hover {
@@ -543,6 +541,17 @@ hr {
   height: 100%;
   line-height: 1;
   padding-top: 30px;
+}
+
+.hiring {
+  padding-top: 39px;
+}
+
+.hiring-lead {
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 .job-paragraph {
@@ -744,6 +753,10 @@ h2 .fas {
     padding: 12px 0;
   }
 
+  .hiring {
+  padding-top: 21px;
+}
+
   .social-box {
     flex-direction: row;
     justify-content: space-around;
@@ -813,15 +826,32 @@ h2 .fas {
 }
 
 @media screen and (max-width: 490px) {
-.header {
-  padding: 20px 20px 0;
+  .header {
+    padding: 15px 20px 0;
+    grid-template-columns: 200px 1fr;
   }
 
   .top-section {
     padding: 20px 20px;
   }
 
+  .open-btn {
+    padding: 10px 12px;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .fa-circle {
+    padding: 0;
+  }
+
   .bottom-section {
     padding: 20px 20px;
+  }
+
+  .bar-graph {
+    height: 180px;
   }
 }
