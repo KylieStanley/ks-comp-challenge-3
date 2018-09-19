@@ -727,7 +727,7 @@ h2 .fas {
                          "bargraph"
                          "applicants";
     grid-template-columns: 100%;
-    grid-template-rows: 3fr 1fr 3fr 1fr;
+    grid-template-rows: 2.5fr 1fr 3fr 1fr;
   }
 
   .graph-box {
@@ -740,7 +740,7 @@ h2 .fas {
   
   .circular-chart {
     margin-left: 27px;
-    max-width: 85%;
+    max-width: 89%;
   }
 
   .bar-graph {
@@ -831,7 +831,7 @@ h2 .fas {
 }
 
 @media screen and (max-width: 608px) {
-  
+
   .job-item {
     align-items: center; 
     display: flex;
