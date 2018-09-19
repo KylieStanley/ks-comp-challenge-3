@@ -488,7 +488,7 @@ hr {
 .job-posting {
   border-radius: 4px;
   display: grid;
-  grid-template-rows: 63px 1fr;
+  grid-template-rows: 66px 1fr;
 }
 
 .job-header {
@@ -540,7 +540,7 @@ hr {
   background-color: #fff;
   height: 100%;
   line-height: 1;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .hiring {
@@ -754,7 +754,8 @@ h2 .fas {
   }
 
   .hiring {
-  padding-top: 21px;
+  display: flex;
+  align-items: center;
 }
 
   .social-box {
@@ -819,9 +820,27 @@ h2 .fas {
   }
 
   .social-inputs {
+    grid-row-gap: 20px;
     grid-template-areas: 'input-one' 
                          'input-two' 
                          'input-three';
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .job-item {
+    display: flex;
+    align-items: center; 
+  }
+
+  .description,
+  .job-paragraph {
+    grid-column: 1 / span 2;
+  }
+
+  .hiring-lead {
+    display: block;
+    margin-left: 18px;
   }
 }
 
